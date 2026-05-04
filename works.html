@@ -13,50 +13,49 @@
     <header class="site-header" id="header">
         <div class="header-inner">
             <a href="index.html" class="logo">Delldai</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="works.html" class="nav-active">Works</a></li>
-                    <li><a href="bio.html">BIO</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="works.html" class="nav-active" data-i18n="works">Works</a></li>
+                    <li><a href="bio.html" data-i18n="bio">BIO</a></li>
+                    <li><a href="store.html" data-i18n="store">Store</a></li>
+                    <li><a href="course.html" data-i18n="course">Course</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="lang-switch" id="langSwitch">中文</button>
         </div>
     </header>
 
     <main>
         <div class="section works-section fade-in">
             <div class="section-header">
-                <h2 class="title-font">Selected Works</h2>
-                <p>Each piece a quiet conversation</p>
+                <h2 class="title-font" data-i18n="works-title">Selected Works</h2>
+                <p data-i18n="works-subtitle">Each piece a quiet conversation</p>
             </div>
             <div class="work-showcase">
                 <div class="work-item from-right" data-animate>
-                    <div class="work-image"><img src="work1.jpg" alt="Lin Qiaozhi" class="work-img"></div>
+                    <div class="work-image"><img src="assets/work1.jpg" alt="Lin Qiaozhi" class="work-img"></div>
                     <div class="work-info">
-                        <h3>Mother of Ten Thousand Infants: Lin Qiaozhi</h3>
-                        <div class="material">Sculpture</div>
-                        <p>She was the only female academician of the first CAS members; she was the first Chinese director of obstetrics and gynecology at Peking Union Medical College Hospital.</p>
+                        <h3 data-i18n="work1-title">Mother of Ten Thousand Infants: Lin Qiaozhi</h3>
+                        <div class="material" data-i18n="work1-material">Sculpture</div>
+                        <p data-i18n="work1-desc">She was the only female academician of the first CAS members; she was the first Chinese director of obstetrics and gynecology at Peking Union Medical College Hospital.</p>
                     </div>
                 </div>
                 <div class="work-item from-left" data-animate>
-                    <div class="work-image"><img src="work2.jpg" alt="A casual piece of work" class="work-img"></div>
+                    <div class="work-image"><img src="assets/work2.jpg" alt="A casual piece of work" class="work-img"></div>
                     <div class="work-info">
-                        <h3>A casual piece of work</h3>
-                        <div class="material">Sketch</div>
-                        <p>Just a doodle.</p>
+                        <h3 data-i18n="work2-title">A casual piece of work</h3>
+                        <div class="material" data-i18n="work2-material">Sketch</div>
+                        <p data-i18n="work2-desc">Just a doodle.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="quote-section fade-in">
-            <div class="quote-text">“Sculpture is the art of the intelligence; it is the art of giving form to the invisible.”</div>
-            <div class="quote-author">— Pablo Picasso</div>
+            <div class="quote-text" data-i18n="quote-text">“Sculpture is the art of the intelligence; it is the art of giving form to the invisible.”</div>
+            <div class="quote-author" data-i18n="quote-author">— Pablo Picasso</div>
         </div>
     </main>
 
@@ -64,7 +63,6 @@
         <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
     </div>
     <div class="nav-overlay" id="navOverlay"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

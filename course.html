@@ -13,27 +13,26 @@
     <header class="site-header" id="header">
         <div class="header-inner">
             <a href="index.html" class="logo">Delldai</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="bio.html">BIO</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="course.html" class="nav-active">Course</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="works.html" data-i18n="works">Works</a></li>
+                    <li><a href="bio.html" data-i18n="bio">BIO</a></li>
+                    <li><a href="store.html" data-i18n="store">Store</a></li>
+                    <li><a href="course.html" class="nav-active" data-i18n="course">Course</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="lang-switch" id="langSwitch">中文</button>
         </div>
     </header>
 
     <main>
         <div class="section fade-in">
             <div class="section-header">
-                <h2 class="title-font">Course</h2>
-                <p>Coming soon</p>
+                <h2 class="title-font" data-i18n="course-title">Course</h2>
+                <p data-i18n="course-subtitle">Coming soon</p>
             </div>
         </div>
     </main>
@@ -42,7 +41,6 @@
         <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
     </div>
     <div class="nav-overlay" id="navOverlay"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

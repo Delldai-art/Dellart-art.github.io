@@ -13,19 +13,18 @@
     <header class="site-header" id="header">
         <div class="header-inner">
             <a href="index.html" class="logo">Delldai</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="bio.html" class="nav-active">BIO</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="home">Home</a></li>
+                    <li><a href="works.html" data-i18n="works">Works</a></li>
+                    <li><a href="bio.html" class="nav-active" data-i18n="bio">BIO</a></li>
+                    <li><a href="store.html" data-i18n="store">Store</a></li>
+                    <li><a href="course.html" data-i18n="course">Course</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="lang-switch" id="langSwitch">中文</button>
         </div>
     </header>
 
@@ -33,12 +32,12 @@
         <div class="section fade-in">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="portrait.jpg" alt="Artist portrait" class="portrait-img portrait-default">
-                    <img src="anotherportrait.jpg" alt="Artist portrait hover" class="portrait-img portrait-hover">
+                    <img src="assets/portrait.jpg" alt="Artist portrait" class="portrait-img portrait-default">
+                    <img src="assets/anotherportrait.jpg" alt="Artist portrait hover" class="portrait-img portrait-hover">
                 </div>
                 <div class="about-text">
-                    <h2 class="title-font">BIO</h2>
-                    <p>A man on a mission.<br>For over three decades, Delldai has been a devoted participant in contemporary figurative art, tirelessly capturing the full spectrum of human life through his work.</p>
+                    <h2 class="title-font" data-i18n="bio-title">BIO</h2>
+                    <p data-i18n="bio-text" data-i18n-html>A man on a mission.<br>For over three decades, Delldai has been a devoted participant in contemporary figurative art, seeking to capture every facet of the human experience through his work.</p>
                 </div>
             </div>
         </div>
@@ -48,7 +47,6 @@
         <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
     </div>
     <div class="nav-overlay" id="navOverlay"></div>
-
     <script src="script.js"></script>
 </body>
 </html>

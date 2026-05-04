@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body { overflow: hidden; }
-    </style>
+    <style>body { overflow: hidden; }</style>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -28,33 +26,31 @@
     <header class="site-header" id="header">
         <div class="header-inner">
             <a href="index.html" class="logo">Delldai</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-                <span></span><span></span><span></span>
-            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
             <nav class="main-nav" id="mainNav">
                 <ul>
-                    <li><a href="index.html" class="nav-active">Home</a></li>
-                    <li><a href="works.html">Works</a></li>
-                    <li><a href="bio.html">BIO</a></li>
-                    <li><a href="store.html">Store</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" class="nav-active" data-i18n="home">Home</a></li>
+                    <li><a href="works.html" data-i18n="works">Works</a></li>
+                    <li><a href="bio.html" data-i18n="bio">BIO</a></li>
+                    <li><a href="store.html" data-i18n="store">Store</a></li>
+                    <li><a href="course.html" data-i18n="course">Course</a></li>
+                    <li><a href="contact.html" data-i18n="contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="lang-switch" id="langSwitch">中文</button>
         </div>
     </header>
 
     <main>
         <div class="hero fade-in visible" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; margin: 0; padding: 0;">
             <div class="hero-overlay">
-                <h1 class="title-font">The Warmth of Form</h1>
-                <p>Figurative art · Emotional resonance</p>
-                <a href="works.html" class="hero-cta">Explore Works</a>
+                <h1 class="title-font" data-i18n="hero-title">The Warmth of Form</h1>
+                <p data-i18n="hero-subtitle">Figurative art · Emotional resonance</p>
+                <a href="works.html" class="hero-cta" data-i18n="hero-cta">Explore Works</a>
             </div>
-            <a href="Justforfun.html" class="about-page-link" target="_blank">About this page</a>
+            <a href="Justforfun.html" class="about-page-link" target="_blank" data-i18n="about-page-link">About this page</a>
         </div>
     </main>
-
     <script src="script.js"></script>
 </body>
 </html>
